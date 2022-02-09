@@ -105,3 +105,11 @@
 ~setupConfig.value("64ch Scarlett Aggregate", 64);
 )
 
+
+// https://archive.flossmanuals.net/pure-data/audio-tutorials/generating-waveforms.html
+(
+b = Buffer.alloc(s, 512, 1);
+b.sine2([1, 3, 5, 7, 9, 11, 13, 15], 1.0 / [1, 3, 5, 7, 9, 11, 13, 15], asWavetable:false);
+)
+b.plot;
+

@@ -29,23 +29,23 @@ function CreateTrack(index, name, channel, lastInFolder)
   reaper.SetMediaTrackInfo_Value( tr, 'I_FOLDERDEPTH',folderDepth)
 end
 
-CreateFolder(0, "Low")
-CreateTrack(1, "Low 1", "Input 1 (BlackHole 64ch)", false)
-CreateTrack(2, "Low 2", "Input 3 (BlackHole 64ch)", false)
-CreateTrack(3, "Low 3", "Input 5 (BlackHole 64ch)", false)
-CreateTrack(4, "Low 4", "Input 7 (BlackHole 64ch)", true)
+CreateFolder(0, "Low noise")
+CreateTrack(1, "Low noise 1", "Input 1 (BlackHole 64ch)", false)
+CreateTrack(2, "Low noise 2", "Input 3 (BlackHole 64ch)", true)
 
-CreateFolder(5, "Middle")
-CreateTrack(6, "Middle 1", "Input 9 (BlackHole 64ch)", false)
-CreateTrack(7, "Middle 2", "Input 11 (BlackHole 64ch)", false)
-CreateTrack(8, "Middle 3", "Input 13 (BlackHole 64ch)", false)
-CreateTrack(9, "Middle 4", "Input 15 (BlackHole 64ch)", true)
+CreateFolder(3, "Low pitch")
+CreateTrack(4, "Low pitch 1", "Input 5 (BlackHole 64ch)", false)
+CreateTrack(5, "Low pitch 2", "Input 7 (BlackHole 64ch)", false)
+CreateTrack(6, "Low pitch 3", "Input 9 (BlackHole 64ch)", true)
 
-CreateFolder(10, "High")
-CreateTrack(11, "High 1", "Input 17 (BlackHole 64ch)", false)
-CreateTrack(12, "High 2", "Input 19 (BlackHole 64ch)", false)
-CreateTrack(13, "High 3", "Input 21 (BlackHole 64ch)", false)
-CreateTrack(14, "High 4", "Input 23 (BlackHole 64ch)", true)
+CreateFolder(7, "Middle noise")
+CreateTrack(8, "Middle noise 1", "Input 11 (BlackHole 64ch)", false)
+CreateTrack(9, "Middle noise 2", "Input 13 (BlackHole 64ch)", true)
+
+CreateFolder(10, "Middle pitch")
+CreateTrack(11, "Middle pitch 1", "Input 15 (BlackHole 64ch)", false)
+CreateTrack(12, "Middle pitch 2", "Input 17 (BlackHole 64ch)", false)
+CreateTrack(13, "Middle pitch 3", "Input 19 (BlackHole 64ch)", true)
 
 
 
